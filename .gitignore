@@ -31,3 +31,12 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+# Distribution dir
+dist
+
+# OSX shizzle
+.DS_Store
+
+# Sublime project files
+*.sublime-*
