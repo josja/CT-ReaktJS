@@ -14,9 +14,5 @@ class Restaurant extends React.Component {
   }
 }
 
-// Prop types validation
-Restaurant.propTypes = {
-  restaurant: React.PropTypes.object.isRequired,
-};
 
 export default Restaurant;

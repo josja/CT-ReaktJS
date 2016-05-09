@@ -1,6 +1,3 @@
-require('babel-core/register')({
-        "presets": ["es2015"],
-        "presets": ["react"]
-});
+require('babel-core/register');
 
 module.exports = require('./server');

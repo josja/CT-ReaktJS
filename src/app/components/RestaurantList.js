@@ -25,19 +25,4 @@ class RestaurantList extends React.Component {
   }
 }
 
-RestaurantList.defaultProps = {
-  restaurantlist: {
-    url: 'https://api.pimmr.me',
-    city: 'Amsterdam',
-    start: 0,
-    limit: 10,
-    title: 'Restaurant List',
-    restaurants: [
-      {
-        name: 'Loading...'
-      }
-    ]
-  }
-};
-
 export default RestaurantList;
