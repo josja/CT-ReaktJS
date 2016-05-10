@@ -1,0 +1,27 @@
+
+.home__wrapper a {
+    color: #222222;
+}
+
+.home__wrapper h1,
+.home__wrapper h2 {
+    text-align: center;
+}
+
+.home__label {
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.home__input {
+    margin-left: 0.5em;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: grey;
+    padding: 0.3em;
+}
+
+/* alternating text colors of the list */
+li:nth-child(even) {color: #A00}
+li:nth-child(odd) {color: #000}

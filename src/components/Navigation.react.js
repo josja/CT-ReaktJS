@@ -7,10 +7,7 @@ import { connect } from 'react-redux';
  * @extends React.Component
  */
 class Navigation extends React.Component {
-  /*
-   * @method render
-   * @returns {JSX}
-   */
+
   render () {
     const dispatch = this.props.dispatch;
     const { currentpage, hasmore } = this.props.data;

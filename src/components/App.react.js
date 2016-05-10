@@ -12,6 +12,7 @@ import Logo from '../../img/logo.png';
 import Restaurants from './Restaurants.react';
 
 class App extends Component {
+
   render() {
     return (
       <div className="wrapper">

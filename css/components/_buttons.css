@@ -1,1 +1,10 @@
 /*This file contains all styles related to the button component.*/
+
+.btn {
+    display: inline-block;
+    background-color: skyblue;
+    padding: 0.5em;
+    color: #FEFEFE;
+    border-radius: 3px;
+    text-decoration: none;
+}

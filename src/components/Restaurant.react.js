@@ -1,16 +1,10 @@
 import React from 'react';
+import Boldify from '../utils/boldify';
 
-/*
- * @class Item
- * @extends React.Component
- */
+
 class Restaurant extends React.Component {
-  /*
-   * @method render
-   * @returns {JSX}
-   */
   render () {
-    return <li className="restaurant">{this.props.restaurant.name} </li>;
+    return <li className="restaurant" dangerouslySetInnerHTML={{__html: Boldify(this.props.restaurant.name) }}/>;
   }
 }
 
