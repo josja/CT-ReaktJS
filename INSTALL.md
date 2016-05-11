@@ -7,10 +7,7 @@ brew remove node --force
 brew tap homebrew/versions
 brew install homebrew/versions/node5
 
-# Install Cairo
-brew install pkg-config cairo libpng jpeg giflib
-
-# Run in root of project
+# CD in to root of project then install
 npm install
 
 # Start serving
