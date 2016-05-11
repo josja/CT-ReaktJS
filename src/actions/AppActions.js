@@ -36,7 +36,7 @@ export function asyncSetPage(page) {
   };
 }
 
-export function setRestaurants(restaurants) {
-  return { type: SET_PAGE, restaurants };
+export function setRestaurants(data) {
+  return { type: SET_PAGE, data };
 }
 

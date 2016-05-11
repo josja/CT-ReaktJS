@@ -20,7 +20,12 @@ function restaurantsReducer(state = initialState, action) {
   Object.freeze(state); //< Locked, use assign()
   switch (action.type) {
     case SET_PAGE:
-      return assignToEmpty(state, action.restaurants);
+      return assignToEmpty(state, {
+        restaurants: action.data.restaurants,
+        currentpage: action.data.currentpage,
+        hasmore: action.data.hasmore,
+        city: action.data.city
+      });
     default:
       return state;
   }

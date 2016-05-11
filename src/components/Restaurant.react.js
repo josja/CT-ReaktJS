@@ -1,10 +1,14 @@
 import React from 'react';
 import Boldify from '../utils/boldify';
-
+import GetBrightest from '../utils/getbrightest'
 
 class Restaurant extends React.Component {
   render () {
-    return <li className="restaurant" dangerouslySetInnerHTML={{__html: Boldify(this.props.restaurant.name) }}/>;
+    const restaurant = this.props.restaurant;
+    //console.log(restaurant);
+    return (
+      <li className="restaurant" dangerouslySetInnerHTML={{__html: Boldify(restaurant.name) }}/>
+    );
   }
 }
 
