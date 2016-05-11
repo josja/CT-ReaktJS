@@ -1,27 +1,35 @@
-
-.home__wrapper a {
-    color: #222222;
+button.btn {
+    margin: 10px;
 }
 
-.home__wrapper h1,
-.home__wrapper h2 {
-    text-align: center;
+li {
+    background-size: 978px;
+    border-radius: 6px;
 }
 
-.home__label {
-    display: block;
-    width: 100%;
-    margin: 1em 0;
+div.jumbotron {
+    background: none;
+    padding: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: rgba(255,255,255,.3);
+    height: 200px;
 }
 
-.home__input {
-    margin-left: 0.5em;
-    border-radius: 2px;
-    border-width: 1px;
-    border-color: grey;
-    padding: 0.3em;
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
 }
 
 /* alternating text colors of the list */
 li:nth-child(even) {color: #A00}
 li:nth-child(odd) {color: #000}
+
+span.label {
+    font-size: 16px;
+    margin: 4px;
+}

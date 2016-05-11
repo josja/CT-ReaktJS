@@ -7,4 +7,4 @@ export const APICONFIG = {
 };
 
 // Actions for reducer
-export const SET_PAGE  = 'SET_PAGE';
+export const SET_PAGE = 'SET_PAGE';

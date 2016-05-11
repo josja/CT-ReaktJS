@@ -1,6 +1,7 @@
 import { asyncSetPage } from '../actions/AppActions';
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
+import { Button } from 'react-bootstrap';
 
 /*
  * @class RestaurantList
@@ -8,16 +9,15 @@ import { connect } from 'react-redux';
  */
 class Navigation extends React.Component {
 
-  render () {
+  render() {
     const dispatch = this.props.dispatch;
     const { currentpage, hasmore } = this.props.data;
     return (
       <div className="navigation">
-        <button type="button" disabled={currentpage < 1}
-          onClick={() => { dispatch(asyncSetPage(currentpage-1)); }}>Previous</button>
-        <div>{ currentpage }</div>
-        <button type="button" disabled={!hasmore}
-          onClick={() => { dispatch(asyncSetPage(currentpage+1)); }}>Next</button>
+        <Button bsStyle="primary" disabled={currentpage < 1}
+          onClick={() => { dispatch(asyncSetPage(currentpage - 1)); }}>Previous</Button>
+        <Button bsStyle="primary" disabled={!hasmore}
+          onClick={() => { dispatch(asyncSetPage(currentpage + 1)); }}>Next</Button>
       </div>
     );
   }

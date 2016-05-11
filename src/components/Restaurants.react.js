@@ -1,5 +1,5 @@
 import { asyncSetPage } from '../actions/AppActions';
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import Restaurant from './Restaurant.react';
 import Navigation from './Navigation.react';
@@ -12,18 +12,16 @@ class Restaurants extends React.Component {
   }
 
   render() {
-    const dispatch = this.props.dispatch;
-    const { restaurants, city } = this.props.data;
+    const { restaurants } = this.props.data;
     return (
-
       <div className="restaurants">
-        <h2>Restaurants in { city }</h2>
         <Navigation/>
         <ul>
-          {restaurants.map(function (item, key) {
+          {restaurants.map( (item, key) => {
             return <Restaurant key={key} restaurant={item} />;
           })}
         </ul>
+        <Navigation/>
       </div>
     );
   }

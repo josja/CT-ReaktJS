@@ -1,15 +1,26 @@
 import React from 'react';
-import Boldify from '../utils/boldify';
-import GetBrightest from '../utils/getbrightest'
+import boldify from '../utils/boldify';
+import Cuisine from './Cuisine.react';
+import { Jumbotron } from 'react-bootstrap';
 
 class Restaurant extends React.Component {
-  render () {
+  render() {
     const restaurant = this.props.restaurant;
-    //console.log(restaurant);
+    const divStyle = {
+      backgroundImage: 'url(' + restaurant.photos[0].s3URL + ')'
+    };
     return (
-      <li className="restaurant" dangerouslySetInnerHTML={{__html: Boldify(restaurant.name) }}/>
+      <li style={divStyle}>
+        <Jumbotron>
+          <h1 dangerouslySetInnerHTML={{__html: boldify(restaurant.name) }}></h1>
+          { restaurant.cuisines.map( (item, key) => {
+            return <Cuisine key={key} cuisine={item} />;
+          })}
+        </Jumbotron>
+      </li>
     );
   }
 }
 
 export default Restaurant;
+

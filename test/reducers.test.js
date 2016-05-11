@@ -3,26 +3,25 @@ import restaurantsReducer from '../src/reducers/restaurantsReducer';
 import * as constants from '../src/constants/AppConstants';
 
 // Test Reducer
-describe('defaultReducer', () => {
-
+describe('restaurantsReducer', () => {
   // Test that the initial state is returning correctly
   it('should return the initial state', () => {
     expect(restaurantsReducer(undefined, {})).toEqual({
       restaurants: [],
       currentpage: 0,
       hasmore: false,
-      city: ""
+      city: ''
     });
   });
 
   // Test that it handles changing the page correctly
   it('should handle the set page action', () => {
     const data = {
-        restaurants: ["1","2","3"],
-        currentpage: 999,
-        hasmore: true,
-        city: "Lutjebroek"
-      };
+      restaurants: ['1', '2', '3'],
+      currentpage: 999,
+      hasmore: true,
+      city: 'Lutjebroek'
+    };
 
     expect(
       restaurantsReducer({}, {
@@ -30,10 +29,10 @@ describe('defaultReducer', () => {
         data
       })
     ).toEqual({
-        restaurants: ["1","2","3"],
-        currentpage: 999,
-        hasmore: true,
-        city: "Lutjebroek"
+      restaurants: ['1', '2', '3'],
+      currentpage: 999,
+      hasmore: true,
+      city: 'Lutjebroek'
     });
   });
 });

@@ -13,11 +13,11 @@ const initialState = {
   restaurants: [],
   currentpage: 0,
   hasmore: false,
-  city: ""
+  city: ''
 };
 
 function restaurantsReducer(state = initialState, action) {
-  Object.freeze(state); //< Locked, use assign()
+  Object.freeze(state); // Locked, use assign()
   switch (action.type) {
     case SET_PAGE:
       return assignToEmpty(state, {
