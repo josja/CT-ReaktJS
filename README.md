@@ -1,4 +1,4 @@
-# Pimmr development case
+# ReaktJS development case
 
 [![Build Status](https://travis-ci.org/josja/case.svg?branch=master)](https://travis-ci.org/josja/case)
 
