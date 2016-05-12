@@ -1,6 +1,6 @@
 # ReaktJS development case
 
-[![Build Status](https://travis-ci.org/josja/case.svg?branch=master)](https://travis-ci.org/josja/case)
+[![Build Status](https://travis-ci.org/josja/CT-ReaktJS.svg?branch=master)](https://travis-ci.org/josja/case)
 
 Pengiun Pim has given you the task to build a small web frontend for his search to the perfect restaurant in Amsterdam.
 A backend is provided to you which returns the top restaurants in Amsterdam, an example is provided in index.html.
